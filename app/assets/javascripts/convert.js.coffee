@@ -1,5 +1,5 @@
 RegExp.quote = (str) ->
-  str.replace /([\"|\\])/g, "\\$1"
+  str.replace /([\"\\])/g, "\\$1"
 
 $ ->
   $('textarea.input').keyup (e) ->
